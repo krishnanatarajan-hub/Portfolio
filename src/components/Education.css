@@ -1,0 +1,29 @@
+.education__card {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.education__icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.education__institution {
+  color: var(--text-secondary);
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.education__date {
+  font-size: 0.82rem;
+}
+
+@media (max-width: 480px) {
+  .education__card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,70 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.about__visual-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  transition: all var(--transition-base);
+}
+
+.about__visual-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.about__dna {
+  width: 140px;
+  height: auto;
+}
+
+.about__visual-label {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.about__text .eyebrow { margin-bottom: 12px; display: block; }
+.about__text .heading-lg { margin-bottom: 24px; }
+
+.about__bio {
+  margin-bottom: 16px;
+}
+
+.about__interests {
+  text-align: center;
+}
+
+.about__interests-title {
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+}
+
+.about__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about__visual { order: 1; }
+  .about__text { order: 0; }
+}

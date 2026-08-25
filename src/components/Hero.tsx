@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import './Hero.css';
 
-const ease = [0.16, 1, 0.3, 1];
+const ease: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const stagger = {
   hidden: {},
